@@ -6,14 +6,18 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      'xxs': '.5rem',
-      'xs': '.75rem',
+      //サイト作成用
+      'xxs': '.8rem',
+      // 'xs': '.75rem',
+      'xs': '1rem',
+      '2xl': '1.5rem',
+
+      //以下、未使用
       'sm': '.875rem',
       'tiny': '.875rem',
        'base': '1rem',
        'lg': '1.125rem',
        'xl': '1.25rem',
-       '2xl': '1.5rem',
       '3xl': '1.875rem',
       '4xl': '2.25rem',
        '5xl': '3rem',

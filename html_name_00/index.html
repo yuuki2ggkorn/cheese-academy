@@ -38,14 +38,14 @@
   <section id="top">
     <div class="flex justify-center items-center">
       <img src="./img/mainbg.png" alt="" class="w-full">
-      <h1 class="text-center font-bold absolute z-10 text-white text-2xl top-[20%]">セカイを変えるチーズを作ろう</h1>
-      <h2 class="text-center absolute z-10 text-white text-xl mt-4 top-[25%]">チーズ職人養成学校「チーズアカデミーTOKYO」</h2>
+      <h1 class="text-center font-bold absolute z-10 text-white text-5xl top-[35%]">セカイを変えるチーズを作ろう</h1>
+      <h2 class="text-center absolute z-10 text-white text-3xl mt-4 top-[45%]">チーズ職人養成学校「チーズアカデミーTOKYO」</h2>
     </div>
   </section>
 
 <!-- about -->
   <section id="about">
-      <h2 class="text-center font-bold text-yellow-300 text-lg mt-6 mb-4">ABOUT</h2>
+      <h2 class="text-center font-bold text-yellow-300 text-2xl mt-6 mb-4">ABOUT</h2>
       <p class="text-center text-xs mb-8 leading-loose">
         <span class="font-bold">チーズアカデミーについて</span>
         <br><br>チーズアカデミーは、チーズ職人養成学校です。
@@ -59,34 +59,15 @@
   </section>
 
   <!-- 画像の横タイル -->
-  <style>
-    @keyframes slide {
-      from { transform: translateX(0%); }
-      to { transform: translateX(-100%); }
-    }
-  
-    .slider {
-      display: flex;
-      animation: slide 60s linear infinite;
-    }
-  </style>
-  
-  <div class="slider">
-    <img src="./img/about_04.jpg" alt="" class="w-1/4 h-auto">
-    <img src="./img/about_03.jpg" alt="" class="w-1/4 h-auto">
-    <img src="./img/about_02.jpg" alt="" class="w-1/4 h-auto">
-    <img src="./img/about_01.jpg" alt="" class="w-1/4 h-auto">
-    <!-- 画像を繰り返してループを完全に見せる -->
-    <img src="./img/about_04.jpg" alt="" class="w-1/4 h-auto">
-    <img src="./img/about_03.jpg" alt="" class="w-1/4 h-auto">
-    <img src="./img/about_02.jpg" alt="" class="w-1/4 h-auto">
-    <img src="./img/about_01.jpg" alt="" class="w-1/4 h-auto">
+  <div class="flex">
+    <img src="./img/about_04.jpg" alt="" class="w-1/4 h-auto m-0">
+    <img src="./img/about_03.jpg" alt="" class="w-1/4 h-auto m-0">
+    <img src="./img/about_02.jpg" alt="" class="w-1/4 h-auto m-0">
+    <img src="./img/about_01.jpg" alt="" class="w-1/4 h-auto m-0">
   </div>
-  
-
   <!-- course -->
   <section id="course">
-      <h2 class="text-center text-lg mt-6 mb-4">COURSE</h2>
+      <h2 class="text-center font-bold text-2xl mt-6 mb-4">COURSE</h2>
       <p class="text-center text-xs leading-loose mb-6">未経験からでもスタートができるよう、カリキュラムは多くの専門家や
         <br>現役チーズ職人のアドバイスのもと、作られました。
       </p>
@@ -99,7 +80,7 @@
         </div>
         <div class="w-full md:w-1/2 p-4 pl-12">
           <p class="text-left text-xs leading-loose">
-            <span class="text-bold text-base">本格的な農園を使った実地研修</span>
+            <span class="font-bold text-2xl">本格的な農園を使った実地研修</span>
             <br><br>チーズアカデミーでは、本格的な農園を使った実地研修を
             <br>行うことができます。プロとして活躍するチーズ職人も
             <br>使用するような、広大で環境も整った農園を余すところ
@@ -115,7 +96,7 @@
         </div>
         <div class="w-full md:w-1/2 p-4 pl-16 md:order-1">
           <p class="text-left text-xs leading-loose">
-            <span class="text-bold text-base">必要な知識もしっかりと取得</span>
+            <span class="font-bold text-2xl">必要な知識もしっかりと取得</span>
             <br><br>チーズ作りには、しっかりとした食に関する知識が
             <br>欠かせません。チーズアカデミーでは、一流講師陣による、
             <br>チーズ作りに必要ないろはを余すところなく学べます。
@@ -131,7 +112,7 @@
         </div>
         <div class="w-full md:w-1/2 p-4 pl-12">
           <p class="text-left text-xs leading-loose">
-            <span class="text-bold text-base">卒業制作はティスティング審査あり</span>
+            <span class="font-bold text-2xl">卒業制作はティスティング審査あり</span>
             <br><br>チーズアカデミーでは最後の2ヶ月間で卒業制作を実施。
             <br>卒業制作として、チーズ作りを実際に行います。卒業後、
             <br>一般参加によるティスティング審査があるため、作り手の
@@ -145,7 +126,7 @@
 
   <!-- news -->
   <section id="news">
-      <h2 class="text-center text-yellow-300 text-lg mt-6 mb-3">NEWS</h2>
+      <h2 class="text-center text-yellow-300 text-2xl font-bold mt-6 mb-3">NEWS</h2>
       <p class="text-center text-xs mb-4">ニュース</p>
       <!-- ニュース項目 -->
       <div class="flex flex-wrap justify-center">
@@ -192,11 +173,16 @@
         </article>
       </div>
       <!-- MOREの埋め込み -->
+      <div class="text-center mt-6">
+        <button id="more" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold mb-4 px-10 py-1 rounded">
+          More
+        </button>
+      </div>
   </section>
 
   <!-- access -->
   <section id="access" class="bg-gray-100 pt-6 pb-6">
-      <h2 class="text-center text-lg">Access</h2>
+      <h2 class="text-center text-2xl font-bold">Access</h2>
       <p class="text-xs text-center pt-3 pb-6">会社情報</p>
       <!-- googlemapの埋め込み -->
       <div class="map-container mx-auto">
@@ -227,7 +213,7 @@
         </iframe>
       </div>
       
-      <table class="text-xs text-left mx-auto">
+      <table class="text-xs text-left mx-auto mb-6">
         <tr>
           <td class="pt-6">学校名</td>
           <td class="pt-6">チーズアカデミーTOKYO</td>
@@ -261,16 +247,93 @@
         <br><br>※チーズアカデミーは実際には存在しません。
         <br>間違っても問い合わせしないようお願いいたします。
         </p>
-        <!-- 問い合わせフォーム -->
+    <!-- 問い合わせフォーム -->
+    <style>
+      .vertical-align-middle {
+        vertical-align: middle;
+      }
+    </style>
+    <div class="max-w-md mx-auto pt-8">
+      <!-- <form action="submit.html" method="post" class="flex flex-col space-y-4"> -->
+        <table class="text-xs text-left mx-auto">
+          <tr>
+            <td class="pt-6">名前</td>
+            <td class="pt-6">
+              <input type="text" placeholder="チーズ 太郎" class="p-2 pr-16 border border-gray-300 rounded">
+            </td>
+          </tr>
+          <tr>
+            <td class="pt-6">カナ</td>
+            <td class="pt-6">
+              <input type="text" placeholder="チーズ タロウ" class="p-2 pr-16 border border-gray-300 rounded">
+            </td>
+          </tr>
+          <tr>
+            <td class="pt-6 pr-5">メールアドレス</td>
+            <td class="pt-6 pr-5 ">
+              <input type="email" placeholder="xxxx@xxxx" class="p-2 pr-16 border border-gray-300 rounded">
+            </td>
+          </tr>
+          <tr>
+            <td class="pt-6 pr-5 vertical-align-middle">チーズアカデミーを<br>知ったきっかけ</td>
+            <td class="pt-6 pr-5 vertical-align-middle">
+              <input type="text" placeholder="" class="p-2 pr-16 border border-gray-300 rounded">
+            </td>
+          </tr>
+          <tr>
+            <td class="pt-6 vertical-align-middle">志望動機</td>
+            <td class="pt-6 vertical-align-middle">
+              <div>
+                <label class="flex items-center text-xs pt-2">
+                  <input type="radio" name="contact-type" class="mr-2"> 起業をしたい
+                </label>
+                <label class="flex items-center text-xs pt-2">
+                  <input type="radio" name="contact-type" class="mr-2"> チーズ系企業に就職・転職したい
+                </label>
+                <label class="flex items-center text-xs pt-2">
+                  <input type="radio" name="contact-type" class="mr-2"> チーズと関わる仕事をしており、仕事に生かしたい
+                </label>
+                <label class="flex items-center text-xs pt-2">
+                  <input type="radio" name="contact-type" class="mr-2"> チーズの教養を身に付けたい
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="pt-6 vertical-align-middle">詳細</td>
+            <td class="pt-6">
+              <textarea placeholder="" class="p-2 pr-16 border border-gray-300 rounded h-24 resize-none"></textarea>
+            </td>
+          </tr>
+        </table>
+        <div class="text-center mt-6 pb-12">
+          <button id="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold mb-4 px-10 py-1 rounded">
+          <!-- <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded"> -->
+            送信
+          </button>
+        </div>
+      <!-- </form> -->
+    </div>
+
+      
   </section>
 
   <!-- copyrights -->
-  <footer id="copyrights" class="text-center text-xs bg-gray-400 text-white pt-3 pb-3">
+  <footer id="copyrights" class="text-center text-xs bg-gray-800 text-white pt-3 pb-3">
     copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.
   </footer>
   <!-- ここから上にコードを書く -->
   <!-- この中に記述していく -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/main.js"></script>
+  <!-- java -->
+  <script>
+    document.getElementById('more').addEventListener('click', function() {
+      alert('表示より古い記事はありません ^ ^');
+    });
+    document.getElementById('submit').addEventListener('click', function() {
+      alert('現在、新規の問い合わせを停止しております ^ ^');
+    });
+  </script>
 </body>
 </html>
