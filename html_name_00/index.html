@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>チーズアカデミー</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+  <header>
+    <section class="flex flex-wrap">
+      <div class="shrink-0 py-4">
+        <img src="./img/header_logo.png" alt="" class="w-52 h-auto ml-4">
+      </div>
+      <!-- ナビゲーションバー -->
+      <nav class="flex-grow ml-4 flex justify-end">
+          <ul class="flex">
+              <li class="mr-8 text-xs py-8"><a href="#about">ABOUT</a></li>
+              <li class="mr-8 text-xs py-8"><a href="#course">COURSE</a></li>
+              <li class="mr-8 text-xs py-8"><a href="#news">NEWS</a></li>
+              <li class="mr-8 text-xs py-8"><a href="#access">ACCESS</a></li>
+              <li class="mr-8 text-xs py-8"><a href="#contact">CONTACT</a></li>
+          </ul>
+      </nav>
+    </section>
+  </header>
+
+
+<!-- タイトル部分 -->
+  <section id="top">
+    <div class="flex justify-center items-center">
+      <img src="./img/mainbg.png" alt="" class="w-full">
+      <h1 class="text-center font-bold absolute z-10 text-white text-2xl top-[20%]">セカイを変えるチーズを作ろう</h1>
+      <h2 class="text-center absolute z-10 text-white text-xl mt-4 top-[25%]">チーズ職人養成学校「チーズアカデミーTOKYO」</h2>
+    </div>
+  </section>
+
+<!-- about -->
+  <section id="about">
+      <h2 class="text-center font-bold text-yellow-300 text-lg mt-6 mb-4">ABOUT</h2>
+      <p class="text-center text-xs mb-8 leading-loose">
+        <span class="font-bold">チーズアカデミーについて</span>
+        <br><br>チーズアカデミーは、チーズ職人養成学校です。
+        <br><br>チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。
+        <br>そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。
+        <br><br>そんな思いから、チーズ職人養成学校「チーズアカデミーTOKYO」は歩みを始めています。
+        <br><br>卒業後、チーズ自給自足のバックアップはもちろんのこと、
+        <br>チーズ職人への就職・転職もサポートします。
+      </p>
+            <!-- <img src="path_to_about_image.jpg" alt="About Cheese Academy"> -->
+  </section>
+
+  <!-- 画像の横タイル -->
+  <style>
+    @keyframes slide {
+      from { transform: translateX(0%); }
+      to { transform: translateX(-100%); }
+    }
+  
+    .slider {
+      display: flex;
+      animation: slide 60s linear infinite;
+    }
+  </style>
+  
+  <div class="slider">
+    <img src="./img/about_04.jpg" alt="" class="w-1/4 h-auto">
+    <img src="./img/about_03.jpg" alt="" class="w-1/4 h-auto">
+    <img src="./img/about_02.jpg" alt="" class="w-1/4 h-auto">
+    <img src="./img/about_01.jpg" alt="" class="w-1/4 h-auto">
+    <!-- 画像を繰り返してループを完全に見せる -->
+    <img src="./img/about_04.jpg" alt="" class="w-1/4 h-auto">
+    <img src="./img/about_03.jpg" alt="" class="w-1/4 h-auto">
+    <img src="./img/about_02.jpg" alt="" class="w-1/4 h-auto">
+    <img src="./img/about_01.jpg" alt="" class="w-1/4 h-auto">
+  </div>
+  
+
+  <!-- course -->
+  <section id="course">
+      <h2 class="text-center text-lg mt-6 mb-4">COURSE</h2>
+      <p class="text-center text-xs leading-loose mb-6">未経験からでもスタートができるよう、カリキュラムは多くの専門家や
+        <br>現役チーズ職人のアドバイスのもと、作られました。
+      </p>
+
+    <div class="w-full mx-auto">
+
+      <article class="flex flex-wrap items-center bg-gray-100">
+        <div class="w-full md:w-1/2">
+          <img src="./img/course_01.jpg" alt="" class="w-full h-auto">
+        </div>
+        <div class="w-full md:w-1/2 p-4 pl-12">
+          <p class="text-left text-xs leading-loose">
+            <span class="text-bold text-base">本格的な農園を使った実地研修</span>
+            <br><br>チーズアカデミーでは、本格的な農園を使った実地研修を
+            <br>行うことができます。プロとして活躍するチーズ職人も
+            <br>使用するような、広大で環境も整った農園を余すところ
+            <br>なく使い、卒業時には本格的なチーズを自分の力で作れる
+            <br>実践力の養成を目指します。
+          </p> 
+        </div>
+      </article>
+
+      <article class="flex flex-wrap items-center bg-gray-100">
+        <div class="w-full md:w-1/2 md:order-2">
+          <img src="./img/course_02.jpg" alt="" class="w-full h-auto">
+        </div>
+        <div class="w-full md:w-1/2 p-4 pl-16 md:order-1">
+          <p class="text-left text-xs leading-loose">
+            <span class="text-bold text-base">必要な知識もしっかりと取得</span>
+            <br><br>チーズ作りには、しっかりとした食に関する知識が
+            <br>欠かせません。チーズアカデミーでは、一流講師陣による、
+            <br>チーズ作りに必要ないろはを余すところなく学べます。
+            <br>チーズそのものでなく、栄養学全般を学ぶことも
+            <br>可能ですので、チーズ以外への展開も夢ではないでしょう。    
+          </p> 
+        </div>
+      </article>
+
+      <article class="flex flex-wrap items-center bg-gray-100">
+        <div class="w-full md:w-1/2">
+          <img src="./img/course_03.jpg" alt="" class="w-full h-auto">
+        </div>
+        <div class="w-full md:w-1/2 p-4 pl-12">
+          <p class="text-left text-xs leading-loose">
+            <span class="text-bold text-base">卒業制作はティスティング審査あり</span>
+            <br><br>チーズアカデミーでは最後の2ヶ月間で卒業制作を実施。
+            <br>卒業制作として、チーズ作りを実際に行います。卒業後、
+            <br>一般参加によるティスティング審査があるため、作り手の
+            <br>目線だけでなく、消費者の目線から、卒業制作作品としての
+            <br>チーズを、しっかりと評価いただくことができます。    
+          </p> 
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- news -->
+  <section id="news">
+      <h2 class="text-center text-yellow-300 text-lg mt-6 mb-3">NEWS</h2>
+      <p class="text-center text-xs mb-4">ニュース</p>
+      <!-- ニュース項目 -->
+      <div class="flex flex-wrap justify-center">
+        <article class="news-item1 w-1/4 p-4">
+          <div>
+            <img src="./img/news_img.jpg" alt="">
+          </div>
+          <div>
+            <p class="text-left text-xxs mt-3 mb-2">2016/11/18</p>
+            <p class="text-left text-xxs leading-loose">
+              チーズアカデミー卒業生のコスゲさんによる
+              <br>チーズだけをふんだんに使用した話題のピザ屋
+              <br>「Kosuge Pizza」が渋谷でオープンしました！
+            </p>
+          </div>
+        </article>
+
+        <article class="news-item2 w-1/4 p-4">
+          <div>
+            <img src="./img/news_img.jpg" alt="">
+          </div>
+          <div>
+            <p class="text-left text-xxs mt-3 mb-2">2016/11/18</p>
+            <p class="text-left text-xxs leading-loose">
+              チーズアカデミー卒業生のコスゲさんによる
+              <br>チーズだけをふんだんに使用した話題のピザ屋
+              <br>「Kosuge Pizza」が渋谷でオープンしました！
+            </p>
+          </div>
+        </article>
+
+        <article class="news-item3 w-1/4 p-4">
+          <div>
+            <img src="./img/news_img.jpg" alt="">
+          </div>
+          <div>
+            <p class="text-left text-xxs mt-3 mb-2">2016/11/18</p>
+            <p class="text-left text-xxs leading-loose">
+              チーズアカデミー卒業生のコスゲさんによる
+              <br>チーズだけをふんだんに使用した話題のピザ屋
+              <br>「Kosuge Pizza」が渋谷でオープンしました！
+            </p>
+          </div>
+        </article>
+      </div>
+      <!-- MOREの埋め込み -->
+  </section>
+
+  <!-- access -->
+  <section id="access" class="bg-gray-100 pt-6 pb-6">
+      <h2 class="text-center text-lg">Access</h2>
+      <p class="text-xs text-center pt-3 pb-6">会社情報</p>
+      <!-- googlemapの埋め込み -->
+      <div class="map-container mx-auto">
+        <!-- output.cssに持っていくと自動更新で消えるためstyleタグで記載 -->
+        <style>
+          .map-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 30%;
+            overflow: hidden;
+          }
+        
+          .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+          }
+        </style>
+        
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.567326763618!2d139.70357312847074!3d35.66735279592329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9faa249f2b%3A0xc415d41a1217b607!2z44CSMTA3LTAwNjEg5p2x5Lqs6YO95riv5Yy65YyX6Z2S5bGx77yT5LiB55uu77yV4oiS77yWIDJm!5e0!3m2!1sja!2sjp!4v1699808574778!5m2!1sja!2sjp"
+          allowfullscreen=""
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      
+      <table class="text-xs text-left mx-auto">
+        <tr>
+          <td class="pt-6">学校名</td>
+          <td class="pt-6">チーズアカデミーTOKYO</td>
+        </tr>
+        <tr>
+          <td class="pt-3 pr-5">事務所所在地</td>
+          <td class="pt-3 pr-5">〒107-0061東京都港区北青山3-5-6 青朋ビル2F</td>
+        </tr>
+        <tr>
+          <td class="pt-3">TEL</td>
+          <td class="pt-3">03-5413-5045</td>
+        </tr>
+        <tr>
+          <td class="pt-3">FAX</td>
+          <td class="pt-3">03-5413-5046</td>
+        </tr>
+        <tr>
+          <td class="pt-3">MAIL</td>
+          <td class="pt-3">dummy@cheeseacademy.tokyo</td>
+        </tr>
+      </table>
+      <!-- <img src="path_to_access_map.jpg" alt="Access Map"> -->
+  </section>
+
+  <!-- contact -->
+  <section id="contact">
+      <h2 class="text-center text-lg mt-6 mb-3">CONTACT</h2>
+      <p class="text-center text-xs leading-loose">説明会お申し込み・お問い合わせ
+        <br><br>ぜひ1度、足を運んでみませんか。説明会は随時開催中。
+        <br>その他、お問い合わせもお気軽にどうぞ。お待ちしております。
+        <br><br>※チーズアカデミーは実際には存在しません。
+        <br>間違っても問い合わせしないようお願いいたします。
+        </p>
+        <!-- 問い合わせフォーム -->
+  </section>
+
+  <!-- copyrights -->
+  <footer id="copyrights" class="text-center text-xs bg-gray-400 text-white pt-3 pb-3">
+    copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.
+  </footer>
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
